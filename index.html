@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Registration Form</title>
+    <link rel = "stylessheet" href = "styles.css">
+
 </head>
 <body>
+    <div class="container">
+        <h1>Event Registration</h1>
+            <form id = "Registration Form">
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type = "text" id="name" name = "name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for = "email">email</label>
+                        <input type="email" name="name" placeholder="Enteryour email" required>
+
+                    </div>
+                    <div class = "form-group">
+                        <label for="phone"> Phone nunmber</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="Event">Event</label>
+                        <select id = "Event" name="event" required>
+                            <option value="disabled selected">select an event</option>
+                            <option value="workshop">workshop</option>
+                            <option value="seminar">seminar</option>
+                            <option value="networking">networking</option>
+
+                        </select>
+                    </div>
+                    <button type="submit">register</button>
+                </div>
+            </form>
+            <p id="successmessage" class="hidden">Registration successfull! thank you for signing up</p>
+        
+    </div>
+    <script src="script.js"></script>
     
 </body>
 </html>
